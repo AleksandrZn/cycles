@@ -1,0 +1,548 @@
+.workout .logo img {
+  height: 66px;
+}
+.workout {
+  width: 100vw;
+  min-width: 1100px;
+}
+.workout .out img {
+  height: 40px;
+  margin-left: 30px;
+}
+
+.workout nav {
+  margin: 4vh 10vw 5vh 8vw;
+}
+
+.workout nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.workout nav p {
+  display: block;
+  text-decoration: none;
+  outline: none;
+}
+
+.workout nav .topmenu {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: 870px;
+}
+
+.workout nav .topmenu > li,
+.workout nav .topmenu > .contaner_down > li {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.workout nav .topmenu > li > p,
+.workout nav .topmenu > .contaner_down > li > p {
+  font-weight: 400;
+  font-size: 14pt;
+  color: #3b3b3b;
+  padding-bottom: 20px;
+}
+
+.workout nav .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  width: 220px;
+  border-radius: 5px;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  text-align: center;
+}
+
+.workout nav .topmenu > .contaner_down > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.workout nav .submenu li p {
+  color: #3b3b3b;
+  font-size: 12pt;
+  line-height: 46px;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.workout nav .submenu li p:hover {
+  color: #66cee3;
+}
+
+.workout nav .submenu {
+  padding: 10px 0;
+}
+
+.workout nav .topmenu > .contaner_down > li:after {
+  display: block;
+  content: "";
+  background-color: #66cee3;
+  height: 2px;
+  width: 0%;
+  top: 94%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.workout nav .topmenu > .contaner_down > li:hover:after,
+.workout nav .topmenu > .contaner_down > li:focus:after {
+  width: 100%;
+}
+
+.workout nav .contaner_down {
+  margin-top: 20px;
+  min-width: 707px;
+}
+
+.workout nav .contaner_down .down_type {
+  margin: 0 4vw 0 40vw;
+}
+
+.workout .main-content {
+  background: linear-gradient(285.78deg, #66cee3 0.69%, #3d417e 100%);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-width: 1100px;
+  position: relative;
+}
+
+.page_main_workout::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.page_main_workout::-webkit-scrollbar-track {
+  background: none;
+}
+.page_main_workout::-webkit-scrollbar-thumb {
+  background: #0c6e83;
+  border-radius: 10px;
+}
+.page_main_workout {
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.page_main_workout-enter {
+  opacity: 0;
+  margin: 0 auto;
+  transform: scale(0.6, 0.6);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page_main_workout-enter-active {
+  opacity: 1;
+  margin: 0 auto;
+  transform: scale(1, 1);
+}
+
+.page_main_workout-exit {
+  opacity: 1;
+  margin: 0 auto;
+  transform: scale(1, 1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page_main_workout-exit-active {
+  opacity: 0;
+  margin: 0 auto;
+  transform: scale(0.6, 0.6);
+}
+
+.workout .main-content .discription {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.workout .main-content .discription div {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 70%;
+}
+
+.workout .main-content .discription div h1,
+.workout .main-content .discription div p,
+.workout .main-content .discription div span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.workout .main-content .discription div h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.workout .main-content .discription div p {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.workout .main-content .discription div p span {
+  font-weight: 350;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.workout .main-content .training {
+  background: linear-gradient(101.93deg, #383a64 5.56%, #0c6e83 98.03%);
+  border-radius: 80px;
+  width: 80%;
+  min-height: 400px;
+  align-self: center;
+  display: flex;
+}
+
+.workout .main-content .footter {
+  font-weight: 400;
+  font-size: 18pt;
+  height: 350px;
+  width: 1100px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: no-repeat center 50% /80% url(../images/f.svg);
+  mix-blend-mode: Luminosity;
+  align-self: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.workout .main-content .training .exercises {
+  margin: 78px 0 0 70px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.training .training_input,
+.training .weight,
+.training .percent,
+.training .repit {
+  width: 60px;
+  margin: 0;
+  margin: 0 10px;
+  font-size: 20px;
+  height: 26px;
+  color: white;
+}
+
+.workout .main-content .training .exercises p {
+  white-space: nowrap;
+  margin: 12px 0 25px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 39px;
+  margin-right: 60px;
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 30px;
+  padding-bottom: 5px;
+}
+
+.done {
+  background-color: #7bbcb6;
+}
+
+.set {
+  background-color: #cfb48a;
+}
+.workout .main-content .training .input_values {
+  overflow: auto;
+  height: 90%;
+  margin: 0 80px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.workout .main-content .training .input_values::-webkit-scrollbar {
+  height: 10px;
+}
+.workout .main-content .training .input_values::-webkit-scrollbar-track {
+  background: none;
+}
+.workout .main-content .training .input_values::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.workout input {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid white;
+  color: #646464;
+  font-size: 16pt;
+  width: 426px;
+  height: 37px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.workout .main-content .training .input_values .values_exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.workout .main-content .training .input_values .values_exercise .values {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.workout .main-content .training .input_values .values_exercise .values p {
+  margin: auto 5px;
+}
+
+.workout .main-content .training .wrapper_description {
+  position: relative;
+  display: flex;
+}
+
+.workout .main-content .training .description {
+  background: linear-gradient(
+    180deg,
+    rgba(67, 112, 156, 0.3) 10%,
+    rgba(67, 112, 156, 0) 90%
+  );
+  display: flex;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  margin: 0 30px 30px 0;
+}
+
+.workout .main-content .training .description span {
+  display: flex;
+  width: 60px;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.wraper_menu_tools {
+  width: 40px;
+  position: absolute;
+  top: 250px;
+  left: 70px;
+}
+.gear {
+  background: no-repeat center url(../images/gear.svg);
+  width: 40px;
+  height: 42px;
+  opacity: 0.25;
+}
+
+.tools {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin:top center;
+}
+
+.active {
+  animation: show 0.15s;
+  animation-fill-mode: forwards;
+}
+
+.inactive {
+  animation: hide 0.15s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes hide {
+  0% {
+   opacity: 1;
+   transform: scaleY(1);
+  }
+  100% {
+  opacity: 0;
+  transform: scaleY(0);
+  }
+}
+
+.rotate {
+  animation: rotate 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.unrotate {
+  animation: unrotate 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0.25;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes unrotate {
+  0% {
+    opacity: 1;
+    transform:rotate(180deg);
+  }
+  100% {
+    opacity: 0.25;
+    transform: rotate(0deg);
+  }
+}
+
+.access {
+  background: no-repeat center url(../images/acces.svg);
+  width: 32px;
+  height: 25px;
+  margin-top: 40px;
+  opacity: .5;
+}
+.delete {
+  background: no-repeat center url(../images/delete.svg);
+  width: 32px;
+  height: 32px;
+  margin-top: 40px;
+  opacity: .5;
+}
+.link_tool {
+  background: no-repeat center url(../images/link.svg);
+  width: 32px;
+  height: 16px;
+  margin-top: 40px;
+  opacity: .5;
+}
+.access:hover,
+.delete:hover, 
+.link_tool:hover {
+opacity: 1;
+}
+.workout .main-content iframe{
+  width: 80%;
+  min-height: 400px;
+  align-self: center;
+  display: flex;
+  border-radius: 5px;
+}
+
+.warning_info .input_wrap {
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 40px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 426px;
+  }
+  
+  .warning_info .input_wrap .input_{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: none;
+    font-size: 14pt;
+    width: 400px;
+    height: 37px;
+    float: left;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    text-align: start;
+    padding: 0 10px;
+  }
+  .warning_info .input_wrap .input_{
+  color: #a3a3a3;
+  }
+  
+  .warning_info .input_wrap .input_:focus{
+    border-bottom: none;
+    color: black;
+  }
+
+  .warning_info .link_error{
+    color: rgb(238, 116, 116);;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }

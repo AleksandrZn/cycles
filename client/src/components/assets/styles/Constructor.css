@@ -1,0 +1,1301 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.construct .logo img {
+  height: 66px;
+}
+.construct .out img {
+  height: 40px;
+}
+
+.construct nav {
+  margin: 4vh 10vw 5vh 8vw;
+}
+
+.construct nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.construct nav p {
+  display: block;
+  text-decoration: none;
+  outline: none;
+}
+
+.construct nav .topmenu {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: 870px;
+}
+
+.construct nav .topmenu > li,
+.construct nav .topmenu > .contaner_down > li {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.construct nav .topmenu > li > p,
+.construct nav .topmenu > .contaner_down > li > p {
+  font-weight: 400;
+  font-size: 14pt;
+  color: #3b3b3b;
+  padding-bottom: 20px;
+}
+
+.construct nav .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  width: 220px;
+  border-radius: 5px;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  text-align: center;
+}
+
+.construct nav .topmenu > .contaner_down > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.construct nav .submenu li p {
+  color: #3b3b3b;
+  font-size: 12pt;
+  line-height: 46px;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.construct nav .submenu li p:hover {
+  color: #fb8a8a;
+}
+
+
+
+.construct nav .submenu {
+  padding: 10px 0;
+}
+
+.construct nav .topmenu > .contaner_down > li:after {
+  display: block;
+  content: "";
+  background-color: #fb8a8a;
+  height: 2px;
+  width: 0%;
+  top: 94%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.construct nav .topmenu > .contaner_down > li:hover:after,
+.construct nav .topmenu > .contaner_down > li:focus:after {
+  width: 100%;
+}
+
+.construct nav .contaner_down {
+  margin-top: 20px;
+}
+
+.construct nav .contaner_down .down_type {
+  margin: 0 4vw 0 40vw;
+}
+
+.container-constructor {
+  min-width: 870px;
+  width: 80%;
+  height: 1000px;
+  background: #ff8e8e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff8e8e),
+    to(#813333)
+  );
+  background: linear-gradient(180deg, #ff8e8e 0%, #813333 100%);
+  margin-left: 7vw;
+  border-radius: 53px;
+  border-bottom-right-radius: 500px;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.container-constructor .contaner-cycles {
+  width: 102%;
+  min-width: 870px;
+  background: #f86b6c;
+  background: linear-gradient(190deg, #f86b6c 0%, #3d1b33 100%);
+  border-radius: 53px;
+  position: absolute;
+  top: 10px;
+  -webkit-transform: rotate(3deg);
+  transform: rotate(4deg);
+  -webkit-box-shadow: -30px 30px 49px 0 rgba(90, 0, 28, 0.61);
+  box-shadow: -30px 30px 49px 0 rgba(90, 0, 28, 0.61);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.container-constructor .contaner-cycles .footter {
+  font-weight: 400;
+  font-size: 18pt;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background:no-repeat center 50% /80% url(../images/f.svg) ;
+  mix-blend-mode: Luminosity;
+  z-index: 2;
+}
+
+.container-constructor .contaner-excercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 340px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-constructor .scroll-wrapper-exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+}
+.container-constructor .input-excercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 264px;
+  width: 140px;
+}
+
+.container-constructor .wrapper {
+  width: 85%;
+  margin: auto;
+  margin-top: 95px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.container-constructor .wrapper .count{
+  position: absolute;
+  top:230px;
+  left:330px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 35px;
+  background:rgba(128, 128, 128, 0.281);
+}
+
+.container-constructor h1 {
+  margin-bottom: 8vh;
+  font-size: 50pt;
+  font-weight: bold;
+  line-height: 75px;
+}
+
+.container-constructor .names > p {
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+.container-constructor .input-excercise > input,
+.container-constructor .number {
+  margin: 12px 0;
+  width: 100px;
+}
+
+.container-constructor .names {
+  width: 320px;
+  margin-right: 6vw;
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+.container-constructor .add {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  margin: 54px;
+  border-radius: 54px;
+  background: rgba(255, 255, 255, 0.34);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container-constructor .add img {
+  margin: 15px;
+}
+
+.container-constructor .wrapper-excercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 340px;
+  width: 140px;
+  background: white;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.container-constructor input {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #a7a7a7;
+  color: #646464;
+  font-size: 16pt;
+  width: 426px;
+  height: 37px;
+  text-align: center;
+}
+
+.container-constructor .exc {
+  font-weight: 300;
+  font-size: 10pt;
+}
+
+.container-constructor .number {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+}
+
+.container-constructor .number input[type="number"] {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  pointer-events: none;
+}
+
+.container-constructor .number input[type="number"]::-webkit-outer-spin-button,
+.container-constructor .number input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.container-constructor .number-minus {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  bottom: 1px;
+  width: 15px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container-constructor .number-plus {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  bottom: 1px;
+  width: 15px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container-constructor .btn {
+  border: 2px solid white;
+  background: none;
+  border-radius: 30px;
+  padding: 15px 18px;
+  font-size: 14pt;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+}
+
+.btn-wraper{
+  flex:0 1 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.disable{
+  pointer-events: none;
+}
+
+.container-constructor .btn1 {
+  color: white;
+}
+
+.container-constructor .btn1:hover {
+  color: #e26060;
+}
+
+.container-constructor .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: white;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.container-constructor .btn1::before {
+  top: 0;
+}
+
+.container-constructor .btn1:hover::before {
+  height: 100%;
+}
+
+.container-constructor .btn1 {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.container-constructor .week {
+  cursor: pointer;
+  position: relative;
+  padding: 0 30px;
+  width: auto;
+  background: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 30px;
+}
+
+.container-constructor .week > div {
+  width: 64px;
+  height: 64px;
+  background: white;
+  margin-left: 1px;
+}
+
+.container-constructor .week div::after {
+  content: "";
+  height: 32px;
+  border-right: 1px solid #a7a7a7;
+  position: absolute;
+  top: 17px;
+  margin: -1px;
+}
+
+.container-constructor .week .mon::after {
+  content: "";
+  height: 32px;
+  border-right: 1px solid white;
+  position: absolute;
+  top: 17px;
+  margin: -1px;
+}
+.container-constructor .sun {
+  position: relative;
+}
+
+.container-constructor .week div {
+  position: relative;
+}
+
+.container-constructor .week span {
+  font-size: 16pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #646464;
+  font-weight: 300;
+}
+
+.container-constructor .days,
+.container-constructor .count_weeks,
+.container-constructor .date {
+  margin: 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-constructor .days {
+  flex: 0 1 100%;
+}
+
+.container-constructor .date input[type="date"] {
+  margin-left: 10px;
+  border-bottom: none;
+  width: 180px;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  margin: 10px;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  pointer-events: none;
+}
+.container-constructor .date .wraper_date {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 220px;
+  height: 64px;
+  margin: auto;
+}
+
+.container-constructor .days h2,
+.container-constructor .count_weeks h2,
+.container-constructor .date h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.container-constructor .duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.warning{
+  color: rgb(238, 116, 116);
+  text-align: center;
+}
+
+.container-constructor .number_weeks {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 64px;
+  width: 166px;
+  margin: auto;
+}
+
+.container-constructor .number_weeks input[type="number"] {
+  width: 30px;
+}
+
+.container-constructor .number_weeks .number-minus,
+.container-constructor .number_weeks .number-plus {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.container-constructor .number_weeks .number-plus {
+  right: 30px;
+}
+
+.container-constructor .number_weeks .number-minus {
+  left: 30px;
+}
+
+.container-constructor .number_weeks::after {
+  content: "";
+  width: 30px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  top: 40px;
+}
+
+.container-constructor .training_input,
+.container-constructor .weight,
+.container-constructor .percent,
+.container-constructor .repit  {
+  width: 60px;
+  margin: 0;
+  margin: 0 10px;
+  font-size: 20px;
+  height: 26px;
+  color: white;
+}
+
+.container-constructor .number.training_input input[type="number"] {
+  height: 26px;
+  line-height: 20px;
+  color: white;
+}
+
+.container-constructor .training_input .number-minus {
+  left: 0;
+}
+
+.container-constructor .training_input .number-plus {
+  right: 0;
+}
+
+.container-constructor .wrapper_training_week {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding: 300px 0;
+  position: relative;
+  width: 100%;
+}
+
+.container-constructor .wrapper_training_week .left_menu,
+.container-constructor .wrapper_training_week .backgraund_2,
+.container-constructor .wrapper_training_week .container_do_training {
+  position: absolute;
+}
+
+.container-constructor .wrapper_training_week .left_menu {
+  border: 4px solid #db9da3;
+  width: 401px;
+  height: 736px;
+  background-color: #bf6f7d;
+  top: 49.5%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 130px 40px 40px 130px;
+}
+
+.container-constructor .wrapper_training_week .left_menu .days_week {
+  cursor: pointer;
+  margin: 30% 20% 30% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.container-constructor .wrapper_training_week .left_menu .days_week .checked{
+  background: #52C9A5;
+}
+
+.container-constructor .wrapper_training_week .left_menu .days_week .no_checked{
+  background: none;
+}
+
+.container-constructor .wrapper_training_week .left_menu .training_day {
+
+  text-align: center;
+  border-bottom: 2px solid white;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 74px;
+  color: #ffffff;
+}
+.container-constructor .wrapper_training_week .left_menu > p {
+  position: absolute;
+  right: 42%;
+  top: 6%;
+  font-family: Segoe UI;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.container-constructor .wrapper_training_week .left_menu > span {
+  position: absolute;
+  top: -4%;
+  left: 42%;
+  font-family: Segoe UI;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 139px;
+  line-height: 185px;
+  color: #ffffff;
+  opacity: 0.4;
+}
+.container-constructor .wrapper_training_week .backgraund_2 {
+  top: 60%;
+  left: 58%;
+  width: 95%;
+  z-index: 3;
+  -webkit-transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
+  height: 729px;
+  border-radius: 220px 83px 83px 130px;
+  display: flex;
+  align-items: center;
+}
+
+.container-constructor .wrapper_training_week .container_do_training {
+  background: linear-gradient(101.93deg, #85424d 5.56%, #58273b 98.03%);
+  border-top: 10px solid #d79ba2;
+  border-bottom: 10px solid #d79ba2;
+  z-index: 2;
+  width: 100%;
+  min-height: 729px;
+  border-radius: 220px 83px 83px 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+}
+
+.container-constructor .wrapper_training_week .container_do_training .add {
+  margin: 0;
+  margin-right: 95%;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .wrapper_description {
+    position: relative;
+  display: flex;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .description {
+  background: linear-gradient(
+    360deg,
+    rgba(163, 66, 77, 0) 5.56%,
+    rgba(158, 39, 59, 0.3) 100%
+  );
+  display: flex;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  margin: 0 30px 30px 0;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .description p{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+   background: rgba(233, 51, 51, 0.6);
+    border-radius: 22px;
+    font-size: 20px;
+  }
+
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .description
+  span {
+  display: flex;
+  width: 60px;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .exercises {
+  margin: 78px 0 0 150px;
+}
+
+.container_do_training .exercises .wrapper_exercise_workout {
+  position: relative;
+}
+
+.container-constructor .added_exercise{
+  position: relative;
+}
+
+.container-constructor .remainder {
+  position: absolute;
+  left: -40px;
+  top: 14px;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: white;
+  font-weight: 400;
+  color: #646464;
+  border-radius: 50%;
+}
+.container_do_training
+  .exercises
+  .wrapper_exercise_workout
+  .delete_exercise_workout {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  display: none;
+}
+
+.container_do_training
+  .exercises
+  .wrapper_exercise_workout
+  .added_exercise:hover
+  .delete_exercise_workout {
+  display: block;
+}
+
+.container-constructor .add_exercise {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -90px;
+}
+
+.help {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%,-50%);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(19, 18, 18, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.help p{
+  font-size: 25px;
+  color:rgb(255, 255, 255);
+  width: 800px;
+  text-align: end;
+  cursor: pointer;
+}
+
+.help p:hover{
+  color:red;
+}
+
+.help video{
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+}
+
+.container-constructor .add_exercise select {
+  cursor: pointer;
+  height: 50px;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  border-radius: 25px;
+  color: #646464;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .exercises
+  p {
+  white-space: nowrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  font-size: 26px;
+}
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .input_values {
+  overflow: auto;
+  height: 90%;
+  margin: 0 70px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .input_values
+  .values_exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .input_values
+  .values_exercise
+  .values {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 30px;
+}
+
+.container-constructor
+  .wrapper_training_week
+  .container_do_training
+  .input_values
+  .values_exercise
+  .values
+  p {
+  margin: auto 5px;
+  border-bottom: 1px solid white;
+}
+
+.container-constructor .delete_wrapper {
+  position: relative;
+  border-radius: 30px;
+  margin: 5px;
+  min-width: 145px;
+  height: 345px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.container-constructor .delete_wrapper:hover {
+  border-top-right-radius: 10px;
+  background-color: #ffb7c0;
+}
+
+.container-constructor .delete_wrapper:hover .wrapper-excercise {
+  border-top-right-radius: 60px;
+}
+
+.container-constructor .delete_wrapper:hover .delete_exercise {
+  display: block;
+}
+
+.hiden{
+  display: none;
+}
+
+.container-constructor .delete_exercise {
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
+.page_main {
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.page_main-enter {
+  opacity: 0;
+  margin: 0 auto;
+  transform: scale(0.6, 0.6);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page_main-enter-active {
+  opacity: 1;
+  margin: 0 auto;
+  transform: scale(1, 1);
+}
+
+.page_main-exit {
+  opacity: 1;
+  margin: 0 auto;
+  transform: scale(1, 1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page_main-exit-active {
+  opacity: 0;
+  margin: 0 auto;
+  transform: scale(0.6, 0.6);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffb7c0;
+  border-radius: 10px;
+}
+.container-constructor .description_workout{
+  display: flex;
+  flex-direction: column;
+}
+.container-constructor .description_workout h1{
+margin: 95px 0 0 100px;
+}
+
+.container-constructor .description_workout p{
+  margin: 20px 0 20px 110px;
+  width: 400px;
+  font-size: 18px;
+  }
+
+  .container-constructor .description_workout .btn{
+margin-bottom: 20px;
+  }
+
+  .unvisible{
+    display: none;
+  }
+  .excel_training .wraper_values{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .excel_training .wraper_values p{
+  margin-bottom: 10px;
+  color: rgb(255, 196, 0);
+  align-self: flex-start;
+  padding-left: 10px;
+  position: absolute;
+  }
+  
+  .excel_training .wraper_values .link_error{
+    top:43px;
+  }
+  
+  .excel_training .wraper_values .name_error{
+   top: 113px;
+  }
+  
+  .excel_training{
+    margin-top: 100px;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .excel_training .description{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 50px;
+  font-size: 24px;
+  align-self:flex-start;
+  }
+  
+  .excel_training .description p{
+    margin-top: 5px;
+    margin-bottom: 45px;
+    white-space: nowrap;
+    color: white;
+  }
+  
+  .excel_training .input_wrap {
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 40px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 426px;
+  margin-bottom: 30px;
+  }
+  
+  .excel_training .input_wrap .input_{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: none;
+    font-size: 14pt;
+    width: 400px;
+    height: 37px;
+    float: left;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    text-align: start;
+    padding: 0 10px;
+  }
+  .excel_training .input_wrap .input_{
+  color: #a3a3a3;
+  }
+  
+  .excel_training .input_wrap .input_:focus{
+    border-bottom: none;
+    color: black;
+  }
+
+ .wrapper .btn{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 150px;
+  }
+  .wrapper .error_req{
+    text-align: center;
+    margin-top: 2px;
+   margin-bottom: 40px;
+   color:rgb(255, 196, 0);
+  }
