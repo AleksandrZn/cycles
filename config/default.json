@@ -1,5 +1,5 @@
 {
     "port": 5000,
     "jwtSecret":"cycles pavilaksandor",
-    "databaseURL":"mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+    "databaseURL":"mongodb://localhost:27017/?readPreference=primary&appname=Cycles%20Compass&ssl=false"
 }

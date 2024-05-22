@@ -24,7 +24,7 @@ router.post("/get", authMiddleware, async (req, res) => {
       workout.sort(byField("date"));
       let date = req.body.date.split(".");
       date = date[2] + "-" + date[1] + "-" + date[0];
-      if (workout !== []) {
+      if (workout.length !== 0) {
         for (let index = 0; index < workout.length; index++) {
           let workoutDate = workout[index].date.toLocaleDateString().split(".");
           workoutDate =
